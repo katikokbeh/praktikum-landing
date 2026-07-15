@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практикум: Система работы с брендами — для блогеров и UGC-креаторов</title>
+    <meta name="description" content="За 4 недели соберите систему, которая поможет получать сотрудничества с брендами. Практикум от агентства «Фиолетовая морковь».">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Floating ambient orbs -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 1. HERO -->
+<!-- ═══════════════════════════════════════ -->
+<header class="hero section" id="hero">
+    <div class="container hero-inner">
+
+        <div class="mascot-hero" aria-hidden="true">
+            <svg viewBox="0 0 120 190" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="cb" x1="0" y1="0" x2=".3" y2="1">
+                        <stop offset="0%" stop-color="#a78bfa"/>
+                        <stop offset="100%" stop-color="#7c3aed"/>
+                    </linearGradient>
+                    <linearGradient id="lf" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#34d399"/>
+                        <stop offset="100%" stop-color="#10b981"/>
+                    </linearGradient>
+                </defs>
+                <ellipse cx="44" cy="38" rx="13" ry="24" fill="url(#lf)" transform="rotate(-22,44,38)" opacity=".9"/>
+                <ellipse cx="60" cy="28" rx="11" ry="27" fill="url(#lf)"/>
+                <ellipse cx="76" cy="38" rx="13" ry="24" fill="url(#lf)" transform="rotate(22,76,38)" opacity=".9"/>
+                <path d="M34 56Q28 92 38 132Q50 168 60 174Q70 168 82 132Q92 92 86 56Q80 44 60 42Q40 44 34 56Z" fill="url(#cb)"/>
+                <circle cx="47" cy="82" r="6.5" fill="#fff"/>
+                <circle cx="73" cy="82" r="6.5" fill="#fff"/>
+                <circle cx="49" cy="81" r="3.2" fill="#1E1B4B"/>
+                <circle cx="75" cy="81" r="3.2" fill="#1E1B4B"/>
+                <circle cx="50.5" cy="79" r="1.3" fill="#fff"/>
+                <circle cx="76.5" cy="79" r="1.3" fill="#fff"/>
+                <path d="M47 102Q60 115 73 102" stroke="#1E1B4B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <circle cx="38" cy="96" r="5.5" fill="#c4b5fd" opacity=".3"/>
+                <circle cx="82" cy="96" r="5.5" fill="#c4b5fd" opacity=".3"/>
+            </svg>
+        </div>
+
+        <div class="hero-badge">ПРЕДЗАПИСЬ · 4 НЕДЕЛИ · ЖИВЫЕ ЭФИРЫ</div>
+        <h1 class="hero-title">Система работы с&nbsp;брендами<br><span class="gradient-text">Практикум 2026</span></h1>
+        <p class="hero-subtitle">За 4 недели соберите систему, которая поможет получать сотрудничества с брендами, а не надеяться на случайные заявки.</p>
+
+        <div class="hero-stats">
+            <div class="hero-stat"><span class="hero-stat-icon">📅</span> 4 недели</div>
+            <div class="hero-stat"><span class="hero-stat-icon">🎬</span> 8 уроков</div>
+            <div class="hero-stat"><span class="hero-stat-icon">📡</span> 2 эфира в неделю</div>
+            <div class="hero-stat"><span class="hero-stat-icon">✏️</span> Проверка ДЗ лично</div>
+            <div class="hero-stat"><span class="hero-stat-icon">🎁</span> Starter Pack в подарок</div>
+        </div>
+
+        <div class="hero-cta-row">
+            <a href="#pricing" class="cta-button cta-button-large">Записаться на практикум</a>
+        </div>
+        <p style="margin-top:16px;font-size:0.875rem;color:var(--text-muted);">Предзапись · от <strong style="color:var(--accent-light);">13 900 ₽</strong></p>
+    </div>
+</header>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 2. ПРОБЛЕМА -->
+<!-- ═══════════════════════════════════════ -->
+<section class="section" id="problem">
+    <div class="container">
+        <h2 class="section-title">Почему контент есть,<br><span>а сотрудничеств нет?</span></h2>
+        <p class="section-lead">Большинство креаторов и блогеров допускают одни и те же ошибки:</p>
+        <div class="problems-grid">
+            <div class="problem-card glass">
+                <div class="problem-icon">✕</div>
+                <p>Не понимают своё позиционирование и чем отличаются от сотен других авторов</p>
+            </div>
+            <div class="problem-card glass">
+                <div class="problem-icon">✕</div>
+                <p>Не умеют упаковывать профиль под рекламодателей — бренды просто не видят их</p>
+            </div>
+            <div class="problem-card glass">
+                <div class="problem-icon">✕</div>
+                <p>Не знают, где искать бренды и как выстраивать сотрудничество с нуля</p>
+            </div>
+            <div class="problem-card glass">
+                <div class="problem-icon">✕</div>
+                <p>Работают хаотично без стратегии — нет системы, только случайные заявки</p>
+            </div>
+            <div class="problem-card glass">
+                <div class="problem-icon">✕</div>
+                <p>Не понимают юридическую сторону: договора, маркировка, самозанятость</p>
+            </div>
+            <div class="problem-card glass">
+                <div class="problem-icon">✕</div>
+                <p>Соглашаются на бартер, потому что не знают, как аргументировать свою цену</p>
+            </div>
+        </div>
+        <div class="problem-bottom">
+            <p class="accent-text">Даже при хорошем контенте — без системы нет коммерческих предложений.</p>
+            <p>На практикуме мы пошагово исправим эти ошибки и соберём вашу персональную систему работы с брендами.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 3. ЧТО ПОЛУЧИТЕ -->
+<!-- ═══════════════════════════════════════ -->
+<section class="section" id="results">
+    <div class="container">
+        <h2 class="section-title">К концу практикума<br><span>у вас будет:</span></h2>
+        <div class="results-grid">
+            <div class="result-item glass"><span class="result-check">✔</span><p>Понимание своего места на рынке</p></div>
+            <div class="result-item glass"><span class="result-check">✔</span><p>Чёткое позиционирование</p></div>
+            <div class="result-item glass"><span class="result-check">✔</span><p>Анализ конкурентов и аудитории</p></div>
+            <div class="result-item glass"><span class="result-check">✔</span><p>Упакованный профиль под бренды</p></div>
+            <div class="result-item glass"><span class="result-check">✔</span><p>Медиакит и портфолио</p></div>
+            <div class="result-item glass"><span class="result-check">✔</span><p>Готовый прайс на услуги</p></div>
+            <div class="result-item glass"><span class="result-check">✔</span><p>Контентная стратегия</p></div>
+            <div class="result-item glass"><span class="result-check">✔</span><p>План продвижения на 90 дней</p></div>
+            <div class="result-item glass"><span class="result-check">✔</span><p>База потенциальных брендов</p></div>
+            <div class="result-item glass"><span class="result-check">✔</span><p>Шаблоны для переговоров и скрипты</p></div>
+            <div class="result-item glass"><span class="result-check">✔</span><p>Понимание юридической стороны сотрудничеств</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 4. ПРОГРАММА -->
+<!-- ═══════════════════════════════════════ -->
+<section class="section" id="program">
+    <div class="container">
+        <h2 class="section-title">Программа <span>практикума</span></h2>
+        <p class="section-lead">4 недели · 8 уроков · живые эфиры + записи</p>
+
+        <div class="weeks-list">
+
+            <!-- НЕДЕЛЯ 1 -->
+            <div class="week-block">
+                <div class="week-label">Неделя 1</div>
+                <h3 class="week-title">Стратегия и позиционирование</h3>
+                <div class="modules-list">
+                    <article class="module">
+                        <div class="module-header">
+                            <span class="module-num">01</span>
+                            <h4 class="module-title">🔍 Исследование рынка и поиск своего места</h4>
+                        </div>
+                        <div class="module-body">
+                            <p class="module-desc">Большинство креаторов начинают с контента. Мы начинаем со стратегии.</p>
+                            <ul class="module-contents">
+                                <li>Как анализировать рынок самостоятельно</li>
+                                <li>Какие ниши и форматы востребованы сейчас</li>
+                                <li>Как исследовать конкурентов и находить успешные кейсы</li>
+                                <li>Как определить точки роста для вашего блога или UGC-направления</li>
+                            </ul>
+                            <div class="module-practice">
+                                <span class="practice-label">Практика:</span> Создадите собственную карту рынка и проведёте анализ конкурентов.
+                            </div>
+                            <div class="module-result">
+                                <span class="result-label">Результат:</span> Поймёте, куда двигаться и где находятся деньги в вашей нише.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="module">
+                        <div class="module-header">
+                            <span class="module-num">02</span>
+                            <h4 class="module-title">💎 Распаковка личности и позиционирование</h4>
+                        </div>
+                        <div class="module-body">
+                            <p class="module-desc">Один из самых важных уроков программы. Формируем ваш коммерческий образ.</p>
+                            <ul class="module-contents">
+                                <li>Ваши сильные стороны, опыт и навыки</li>
+                                <li>Личная история и особенности</li>
+                                <li>Целевая аудитория и коммерческая ценность для брендов</li>
+                                <li>Формирование уникального позиционирования</li>
+                            </ul>
+                            <div class="module-practice">
+                                <span class="practice-label">Практика:</span> Создадите карту позиционирования и сформулируете коммерческий оффер.
+                            </div>
+                            <div class="module-result">
+                                <span class="result-label">Результат:</span> Ответы на вопросы «Кто я?», «Для кого?», «Почему бренду работать именно со мной?»
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- НЕДЕЛЯ 2 -->
+            <div class="week-block">
+                <div class="week-label">Неделя 2</div>
+                <h3 class="week-title">Коммерческая упаковка</h3>
+                <div class="modules-list">
+                    <article class="module">
+                        <div class="module-header">
+                            <span class="module-num">03</span>
+                            <h4 class="module-title">📦 Упаковка профиля под бренды</h4>
+                        </div>
+                        <div class="module-body">
+                            <p class="module-desc">Превращаем профиль в работающую коммерческую воронку.</p>
+                            <ul class="module-contents">
+                                <li>Имя профиля, SEO и шапка</li>
+                                <li>Закрепы, актуальные сторис, закреплённые посты</li>
+                                <li>Точки контакта с брендами</li>
+                                <li>Ошибки, которые мешают получать сотрудничества</li>
+                            </ul>
+                            <div class="module-practice">
+                                <span class="practice-label">Практика:</span> Полностью переупакуете профиль.
+                            </div>
+                            <div class="module-result">
+                                <span class="result-label">Результат:</span> Ваш профиль начнёт работать как коммерческая витрина.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="module">
+                        <div class="module-header">
+                            <span class="module-num">04</span>
+                            <h4 class="module-title">📋 Медиакит, портфолио и стоимость услуг</h4>
+                        </div>
+                        <div class="module-body">
+                            <p class="module-desc">Создаём документы, которые продают вас без слов.</p>
+                            <ul class="module-contents">
+                                <li>Что хотят видеть бренды</li>
+                                <li>Как собирать кейсы и оформлять результаты</li>
+                                <li>Как создать медиакит и коммерческое портфолио</li>
+                                <li>Как формировать стоимость и рассчитывать КП</li>
+                                <li>Как работать с бартером и коммерческими интеграциями</li>
+                            </ul>
+                            <div class="module-practice">
+                                <span class="practice-label">Практика:</span> Создадите собственный медиакит и коммерческое портфолио.
+                            </div>
+                            <div class="module-result">
+                                <span class="result-label">Результат:</span> Готовый пакет документов для работы с брендами.
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- НЕДЕЛЯ 3 -->
+            <div class="week-block">
+                <div class="week-label">Неделя 3</div>
+                <h3 class="week-title">Контент и продвижение</h3>
+                <div class="modules-list">
+                    <article class="module">
+                        <div class="module-header">
+                            <span class="module-num">05</span>
+                            <h4 class="module-title">🎬 Контент, который привлекает бренды</h4>
+                        </div>
+                        <div class="module-body">
+                            <p class="module-desc">Разберём, что снимать, чтобы бренды сами писали.</p>
+                            <ul class="module-contents">
+                                <li>Какие типы контента нужны креатору</li>
+                                <li>Как сочетать охваты и коммерцию</li>
+                                <li>Контент доверия и демонстрация экспертности</li>
+                                <li>Как органично интегрировать бренды в контент</li>
+                            </ul>
+                            <div class="module-practice">
+                                <span class="practice-label">Практика:</span> Создадите собственную контентную матрицу.
+                            </div>
+                            <div class="module-result">
+                                <span class="result-label">Результат:</span> Поймёте, какой контент приводит подписчиков, а какой — клиентов.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="module">
+                        <div class="module-header">
+                            <span class="module-num">06</span>
+                            <h4 class="module-title">🚀 Продвижение блогера и креатора</h4>
+                        </div>
+                        <div class="module-body">
+                            <p class="module-desc">Как расти системно, без хаоса и бесконечных экспериментов.</p>
+                            <ul class="module-contents">
+                                <li>Органический рост, Threads, Telegram, Instagram</li>
+                                <li>Коллаборации, комьюнити, нетворкинг</li>
+                                <li>Агентства и биржи</li>
+                                <li>Построение личной репутации на рынке</li>
+                            </ul>
+                            <div class="module-practice">
+                                <span class="practice-label">Практика:</span> Соберёте персональную стратегию продвижения на 90 дней.
+                            </div>
+                            <div class="module-result">
+                                <span class="result-label">Результат:</span> Понятный план роста без хаоса.
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- НЕДЕЛЯ 4 -->
+            <div class="week-block">
+                <div class="week-label">Неделя 4</div>
+                <h3 class="week-title">Клиенты, бренды и деньги</h3>
+                <div class="modules-list">
+                    <article class="module">
+                        <div class="module-header">
+                            <span class="module-num">07</span>
+                            <h4 class="module-title">🤝 Где искать бренды и как получать сотрудничества</h4>
+                        </div>
+                        <div class="module-body">
+                            <p class="module-desc">Переходим от ожидания заявок к активному поиску клиентов.</p>
+                            <ul class="module-contents">
+                                <li>Где искать бренды и как собирать базы компаний</li>
+                                <li>Как анализировать потенциальных клиентов</li>
+                                <li>Как писать в директ, Telegram и Email</li>
+                                <li>Как составлять отклики и вести переговоры</li>
+                                <li>Как повышать вероятность ответа</li>
+                            </ul>
+                            <div class="module-practice">
+                                <span class="practice-label">Практика:</span> Подготовите скрипты и отправите первые предложения брендам.
+                            </div>
+                            <div class="module-result">
+                                <span class="result-label">Результат:</span> Система активного поиска клиентов.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="module">
+                        <div class="module-header">
+                            <span class="module-num">08</span>
+                            <h4 class="module-title">⚖️ Юридическая безопасность и долгосрочная работа</h4>
+                        </div>
+                        <div class="module-body">
+                            <p class="module-desc">Работаем легально и превращаем разовые интеграции в долгосрочные контракты.</p>
+                            <ul class="module-contents">
+                                <li>Договоры, права на контент, маркировка рекламы</li>
+                                <li>Самозанятость и документооборот</li>
+                                <li>Как превращать разовые интеграции в амбассадорские контракты</li>
+                                <li>Работа через агентства и попадание в базы подрядчиков</li>
+                            </ul>
+                            <div class="module-result">
+                                <span class="result-label">Результат:</span> Готовность работать не только с малым бизнесом, но и с крупными брендами и агентствами.
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 5. ДЛЯ КОГО -->
+<!-- ═══════════════════════════════════════ -->
+<section class="section" id="audience">
+    <div class="container">
+        <h2 class="section-title">Для кого <span>этот практикум</span></h2>
+        <div class="audience-grid">
+            <div class="audience-card card"><div class="audience-marker">1</div><p><strong>UGC-креаторы</strong>, которые хотят системно зарабатывать на создании контента для брендов</p></div>
+            <div class="audience-card card"><div class="audience-marker">2</div><p><strong>Микроинфлюенсеры</strong>, которые хотят перейти от бесплатных коллабораций к оплачиваемым контрактам</p></div>
+            <div class="audience-card card"><div class="audience-marker">3</div><p><strong>Начинающие блогеры</strong>, которые не знают, с чего начать монетизацию</p></div>
+            <div class="audience-card card"><div class="audience-marker">4</div><p><strong>Эксперты</strong>, которые хотят монетизировать блог через рекламные интеграции</p></div>
+            <div class="audience-card card"><div class="audience-marker">5</div><p><strong>Авторы контента</strong>, которые хотят выйти на сотрудничества с российскими и международными брендами</p></div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 6. ТАРИФЫ -->
+<!-- ═══════════════════════════════════════ -->
+<section class="section" id="pricing">
+    <div class="container">
+        <h2 class="section-title">Выберите <span>свой формат</span></h2>
+        <p class="section-lead">Оба тарифа включают живые эфиры, записи, домашние задания и групповой чат.</p>
+
+        <div class="pricing-grid">
+
+            <div class="pricing-card glass">
+                <div class="pricing-badge">Групповой</div>
+                <div class="pricing-price">13 900 ₽</div>
+                <div class="pricing-desc">Предзапись</div>
+                <ul class="pricing-features">
+                    <li><span class="pf-check">✔</span> 2 живых эфира в неделю</li>
+                    <li><span class="pf-check">✔</span> Записи всех занятий</li>
+                    <li><span class="pf-check">✔</span> Домашние задания</li>
+                    <li><span class="pf-check">✔</span> Личная проверка ДЗ</li>
+                    <li><span class="pf-check">✔</span> Общий чат с участниками</li>
+                    <li><span class="pf-gift">🎁</span> Starter Pack в подарок</li>
+                </ul>
+                <a href="https://t.me/starterpackpurple_bot" target="_blank" class="cta-button cta-button-full">Записаться</a>
+                <p class="oferta-note">Нажимая на кнопку «Оплатить», вы принимаете условия <a href="https://disk.yandex.ru/i/ae5Jd9ZPDxA7dQ" target="_blank" class="oferta-link">Публичной оферты</a></p>
+            </div>
+
+            <div class="pricing-card pricing-card-featured glass">
+                <div class="pricing-badge pricing-badge-featured">С индивидуальными созвонами</div>
+                <div class="pricing-price">27 800 ₽</div>
+                <div class="pricing-desc">Предзапись</div>
+                <ul class="pricing-features">
+                    <li><span class="pf-check">✔</span> 2 живых эфира в неделю</li>
+                    <li><span class="pf-check">✔</span> Записи всех занятий</li>
+                    <li><span class="pf-check">✔</span> Домашние задания</li>
+                    <li><span class="pf-check">✔</span> Личная проверка ДЗ</li>
+                    <li><span class="pf-check">✔</span> Общий чат с участниками</li>
+                    <li><span class="pf-star">⭐</span> Индивидуальный созвон раз в неделю</li>
+                    <li><span class="pf-gift">🎁</span> Starter Pack в подарок</li>
+                </ul>
+                <a href="https://t.me/starterpackpurple_bot" target="_blank" class="cta-button cta-button-full cta-button-accent">Записаться</a>
+                <p class="oferta-note">Нажимая на кнопку «Оплатить», вы принимаете условия <a href="https://disk.yandex.ru/i/ae5Jd9ZPDxA7dQ" target="_blank" class="oferta-link">Публичной оферты</a></p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 7. БОНУС -->
+<!-- ═══════════════════════════════════════ -->
+<section class="section" id="bonus">
+    <div class="container">
+        <div class="bonus-wrap glass">
+            <div class="bonus-emoji">🎁</div>
+            <h2 class="bonus-title">Бонус для участников предзаписи</h2>
+            <p class="bonus-sub">Сразу после оплаты вы получаете полный <strong>Starter Pack креатора</strong> стоимостью 1&nbsp;990&nbsp;₽ — бесплатно.</p>
+            <div class="bonus-grid">
+                <div class="bonus-item"><span>✔</span> Система работы с брендами</div>
+                <div class="bonus-item"><span>✔</span> Шаблон медиакита</div>
+                <div class="bonus-item"><span>✔</span> Шаблон портфолио</div>
+                <div class="bonus-item"><span>✔</span> Шаблон договора</div>
+                <div class="bonus-item"><span>✔</span> Шаблон ТЗ</div>
+                <div class="bonus-item"><span>✔</span> База полезных сервисов</div>
+                <div class="bonus-item"><span>✔</span> 10 AI-промптов</div>
+                <div class="bonus-item"><span>✔</span> Дополнительные материалы</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 8. ДОВЕРИЕ -->
+<!-- ═══════════════════════════════════════ -->
+<section class="section" id="trust">
+    <div class="container">
+        <h2 class="section-title">Почему этому можно <span>доверять</span></h2>
+        <div class="trust-block">
+            <div class="trust-card glass">
+                <div class="trust-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <h3>Бехтерева Екатерина</h3>
+                <p>Руководитель и основатель инфлюенс-агентства «Фиолетовая морковь». Более 7 лет в работе с блогерами, рекламными интеграциями и продвижением брендов. Миллионные рекламные бюджеты под управлением.</p>
+            </div>
+            <div class="trust-stats">
+                <div class="trust-stat glass">
+                    <div class="trust-stat-number">7+</div>
+                    <div class="trust-stat-label">лет на рынке инфлюенс-маркетинга</div>
+                </div>
+                <div class="trust-stat glass">
+                    <div class="trust-stat-number">100+</div>
+                    <div class="trust-stat-label">реализованных рекламных кампаний</div>
+                </div>
+                <div class="trust-stat glass">
+                    <div class="trust-stat-number">₽₽₽</div>
+                    <div class="trust-stat-label">миллионные бюджеты под управлением</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 9. ФИНАЛЬНЫЙ CTA -->
+<!-- ═══════════════════════════════════════ -->
+<section class="section final-cta-section" id="final">
+    <div class="container">
+        <h2 class="final-title">Через 4 недели у вас будет<br>готовая коммерческая система</h2>
+        <p class="final-text">Не просто блог или набор роликов — а система, которая поможет привлекать бренды, получать сотрудничества и строить долгосрочную карьеру в creator economy.</p>
+        <div class="final-price-row">
+            <span class="final-label">от</span>
+            <span class="final-new-price">13 900 ₽</span>
+        </div>
+        <a href="#pricing" class="cta-button cta-button-large">Выбрать тариф →</a>
+        <p class="final-note">Предзапись · Места ограничены</p>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- FOOTER -->
+<!-- Subtle Starter Pack mention -->
+<div class="starter-hint">
+    <div class="container">
+        <p class="starter-hint-text">
+            Не готовы к практикуму прямо сейчас?&nbsp;&nbsp;
+            <a href="https://katikokbeh.github.io/starterpack-landing/" target="_blank" class="starter-hint-link">
+                Посмотрите Starter Pack →
+            </a>
+            &nbsp;— самостоятельный сборник материалов за 1 990 ₽
+        </p>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p class="footer-brand">Инфлюенс-агентство «Фиолетовая морковь»</p>
+        </div>
+        <div class="footer-legal">
+            <p class="footer-legal-text">ИП Бехтерева Екатерина Николаевна&nbsp;&nbsp;|&nbsp;&nbsp;ИНН: 027501432906&nbsp;&nbsp;|&nbsp;&nbsp;ОГРНИП: 320028000100045&nbsp;&nbsp;|&nbsp;&nbsp;Юридический адрес: 450015, Россия, Респ. Башкортостан, г. Уфа, ул. Мустая Карима, д. 50, кв. 65&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://disk.yandex.ru/i/ae5Jd9ZPDxA7dQ" target="_blank" class="oferta-link">Публичная оферта</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="mailto:ek.behtereva2017@yandex.ru" class="oferta-link">ek.behtereva2017@yandex.ru</a>&nbsp;&nbsp;|&nbsp;&nbsp;© 2026 Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
